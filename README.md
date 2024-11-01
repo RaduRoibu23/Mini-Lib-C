@@ -13,7 +13,7 @@ This project is a simple C library implementation that provides basic system cal
   - `fcntl.h`: Defines file control options.
   - `internal/`: Internal headers for architecture-specific and essential definitions.
     - `arch/x86_64/`: Architecture-specific syscall definitions.
-    - `mm/`: Memory management headers.
+    - `mm/`: Memory management headers.z
   - `sys/`: System-specific headers.
   - `stdlib.h`: Standard library functions like `malloc`, `free`, etc.
 
@@ -55,15 +55,3 @@ I/O operations like `open`, `close`, `read`, `write`, and `puts` are implemented
 ## Build Instructions
 
 To build the project, use the provided `Makefile`. The main target is `libc.a`, which is the static library containing all the compiled object files.
-
-```sh
-
-To clean the build artifacts, use:
-
-To create a zip archive of the source code, use:
-
-Error Handling
-Error codes are defined in the errno.h header file. Functions set the global errno variable to indicate errors.
-
-License
-This project is licensed under the BSD-3-Clause License.
